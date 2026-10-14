@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v6
       - name: Verify and unpack the approved website
         run: |
-          echo '267ff11fd4e5e00edb77761afd7856153638640132b7005cf0045876f5ac0232  the-room-project-github-pages.zip' | sha256sum --check
+          echo '6b30e62112586da27c8dbd6895443d0cf84320416012923bbd4bf0d820bbf730  the-room-project-github-pages.zip' | sha256sum --check
           mkdir -p _site
           unzip -q the-room-project-github-pages.zip -d _site
           test -f _site/index.html
